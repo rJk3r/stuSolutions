@@ -65,22 +65,22 @@
             // 
             resources.ApplyResources(textBox1, "textBox1");
             textBox1.Name = "textBox1";
-            textBox1.KeyPress += textBox5_KeyPress;
             textBox1.KeyDown += textBox1_KeyDown;
+            textBox1.KeyPress += textBox5_KeyPress;
             // 
             // textBox2
             // 
             resources.ApplyResources(textBox2, "textBox2");
             textBox2.Name = "textBox2";
-            textBox2.KeyPress += textBox2_KeyPress;
             textBox2.KeyDown += textBox2_KeyDown;
+            textBox2.KeyPress += textBox2_KeyPress;
             // 
             // textBox3
             // 
             resources.ApplyResources(textBox3, "textBox3");
             textBox3.Name = "textBox3";
-            textBox3.KeyPress += textBox3_KeyPress;
             textBox3.KeyDown += textBox3_KeyDown;
+            textBox3.KeyPress += textBox3_KeyPress;
             // 
             // label1
             // 
@@ -112,13 +112,14 @@
             label4.BackColor = SystemColors.ActiveCaptionText;
             label4.ForeColor = Color.Red;
             label4.Name = "label4";
+            label4.Click += label4_Click;
             // 
             // textBox5
             // 
             resources.ApplyResources(textBox5, "textBox5");
             textBox5.Name = "textBox5";
-            textBox5.KeyPress += textBox5_KeyPress; // Ввод текста
-            textBox5.KeyDown += textBox5_KeyDown; // Нажатие клавиши
+            textBox5.KeyDown += textBox5_KeyDown;
+            textBox5.KeyPress += textBox5_KeyPress;
             // 
             // label5
             // 
@@ -196,6 +197,7 @@
             button2.BackColor = Color.FromArgb(0, 192, 0);
             button2.Name = "button2";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -203,6 +205,7 @@
             button3.BackColor = Color.FromArgb(0, 192, 0);
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // dataGridView1
             // 
